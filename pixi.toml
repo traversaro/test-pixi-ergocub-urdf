@@ -1,0 +1,14 @@
+[project]
+authors = ["Silvio <silvio.traversaro@iit.it>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "test-pixi-ergocub-urdf"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+checkfinduri = "resolve-robotics-uri-py package://ergoCub/robots/ergoCubSN000/model.urdf"
+
+[dependencies]
+ergocub-software = "*"
+resolve-robotics-uri-py = "*"
